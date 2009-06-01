@@ -21,7 +21,6 @@ def check_orthogonality(o, tol=1e-10):
 def ev_to_cov(o,v):
     return np.dot(o*v,o.T)
 
-
 def covariance(name, v, o=None, doc="A covariance matrix", *args, **kwds):
     """Deterministic converting a vector of eigenvalues and 
     an orthogonal basis to a covariance matrix."""
