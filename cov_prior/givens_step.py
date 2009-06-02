@@ -1,3 +1,8 @@
+# Author: Anand Patil
+# Date: 2 June 2009
+# License: Creative Commons BY-NC-SA
+####################################
+
 from fast_givens import fg
 import pymc as pm
 import numpy as np
