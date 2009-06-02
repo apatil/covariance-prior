@@ -19,4 +19,3 @@ if __name__ == '__main__':
             license="MIT License",
             requires=['NumPy','PyMC'],
             **(config.todict()))
-

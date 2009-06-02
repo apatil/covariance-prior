@@ -44,4 +44,3 @@ def covariance(name, v, o=None, doc="A covariance matrix", constrain=True, *args
                 name=name, parents={'o': o, 'v': v},
                 doc=doc, *args, **kwds)
     return o,c
-        
