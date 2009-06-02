@@ -6,6 +6,7 @@ __all__ = ['OrthogonalBasis','check_orthogonality','covariance']
 class OrthogonalBasis(pm.Uninformative):
     "An orthogonal basis, stored in the columns of a matrix."
     def __init__(self, name, n, *args, **kwargs):
+        self.n = n
         pm.Uninformative.__init__(self, name, np.array(np.eye(n), order='F'), *args, **kwargs)
 
 def check_orthogonality(o, tol=1e-10):
