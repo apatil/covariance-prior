@@ -39,7 +39,7 @@ def covariance(name, v, o=None, doc="A covariance matrix", constrain=True, *args
     """
     
     if o is None:
-        o = OrthogonalBasis(name + '_eigenvalues', len(v.value), constrain=constrain)
+        o = OrthogonalBasis(name + '_eigenvectors', len(v.value), constrain=constrain)
     c = pm.Deterministic(eval=ev_to_cov,
                 name=name, parents={'o': o, 'v': v},
                 doc=doc, *args, **kwds)
